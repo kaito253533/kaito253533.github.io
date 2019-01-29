@@ -12,8 +12,7 @@ description:
     We used the data set which represents the rent prices of different types of houses in the Brisbane area.
     <img src="img/project/P1_data.png" alt="" class=""></p>
     <p>First of all, because the rents are usually charged weekly in Australia, the rent prices are represented by a column of weekly_rent. In addition, the data contains a column called 'locality' to show the location in the Brisbane area. Finally, the different types of house are represented in a column called 'dwelling_type'.</p>
-    process:
-    <p>Firstly, we use 'summary' function to gain the basic knowledge of this data set.</p>
+    process: <p>Firstly, we use 'summary' function to gain the basic knowledge of this data set.</p>
     <img src="img/project/P1_process1.png" alt="" class="">
     result:
     
