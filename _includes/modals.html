@@ -17,11 +17,11 @@
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             {% if post.description %}
                                 <h3>Data Story</h3>
-                                <p>{{post.description.story}}</p>
+                                {{post.description.story}}
                                 <h3>Analysis Process</h3>
-                                <p>{{post.description.process}}</p>
+                                {{post.description.process}}
                                 <h3>Analysis Result</h3>
-                                <p>{{post.description.result}}</p>
+                                {{post.description.result}}
                             {% endif %}
                             <ul class="list-inline item-details">
                                 {% if post.client %}
