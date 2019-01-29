@@ -9,6 +9,7 @@ client: Start Bootstrap
 category: Data Analysis
 description:
     story: This is the practice of R language from QUT tutorial materials. I made this to record my learning process. We used the data set which represents the rent prices of different types of houses in the Brisbane area.
+    ![P1_data](img/P1_data.png)
     process:
     result:
     
