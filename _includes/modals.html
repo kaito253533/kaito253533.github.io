@@ -14,15 +14,10 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            {% if post.description %}
-                                <h3>Data Story</h3>
-                                <p>{{ post.description.story }}</p>
-                                <h3>Analysis Process</h3>
-                                <p>{{ post.description.process }}</p>
-                                <h3>Analysis Result</h3>
-                                <p>{{ post.description.result }}</p>
-                            {% endif %}
                             <img src="img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% if post.description %}
+                                <p>{{ post.description }}</p>
+                            {% endif %}
                             <ul class="list-inline item-details">
                                 {% if post.client %}
                                     <li>Client:

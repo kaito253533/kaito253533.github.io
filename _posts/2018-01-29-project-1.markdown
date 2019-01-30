@@ -2,14 +2,15 @@
 layout: default
 modal-id: 1
 date: 2018-01-29
-img: project/P1_result.png
+img: project/P1_result4.png
 alt: image-alt
 project-date: January 2018
 client: Start Bootstrap
 category: Data Analysis
 description:
-    story: This is the practice of R language from QUT tutorial materials. I made this to record my learning process. <br/>We used the data set which represents the rent prices of different types of houses in the Brisbane area. <img src="img/project/P1_data.png" class="img-responsive img-centered" alt="image-alt">
-    process: Firstly, we used the 'summary' function to gain the basic idea of the data set.<img src="img/project/P1_process1.png" class="img-responsive img-centered" alt="image-alt"> Then, try to use the 'aggregate' function to find out the 'mean' of each types of houses. <img src="img/project/P1_process2.png" class="img-responsive img-centered" alt="image-alt"> Finally, use 'barplot' function to generate a bar chart.<img src="img/project/P1_process3.png" class="img-responsive img-centered" alt="image-alt"> 
-    result: 
+    This is the practice of R language from QUT tutorial materials. I made this to record my learning process. <br/>The data set represents the rent prices of different types of houses in the Brisbane area. As We can see, the data set contains the house types(column-dwelling_type), weely rent price(column-weekly_rent), and location(column-locality).<img src="img/project/P1_data.png" class="img-responsive img-centered" alt="image-alt"> 
+    Firstly, we can use the 'summary' function to gain the basic idea of the data set. Now, the detail infomation has been shown, such as minimum, median, and mean.<img src="img/project/P1_process1.png" class="img-responsive img-centered" alt="image-alt"> Then, try to use the 'aggregate' function to find out the 'mean' of each types of houses. <img src="img/project/P1_process2.png" class="img-responsive img-centered" alt="image-alt"> Finally, use 'barplot' function to generate a bar chart.<img src="img/project/P1_process3.png" class="img-responsive img-centered" alt="image-alt"> 
+    The bar chart will look like <img src="img/project/P1_result1.png" class="img-responsive img-centered" alt="image-alt"> Now, we can use ggplot2 library to draw another bar chart.<img src="img/project/P1_process4.png" class="img-responsive img-centered" alt="image-alt"><img src="img/project/P1_result2.png" class="img-responsive img-centered" alt="image-alt">
+    Moreover, we are going to find the weekly rent not only for each types of houses but also in different locations. As a result, we also use 'aggregate' function, but this time, we use multi feacture to do the 'group by'. Same, we can use 'bar char' function to draw a chart.<img src="img/project/P1_process5.png" class="img-responsive img-centered" alt="image-alt"> <img src="img/project/P1_result3.png" class="img-responsive img-centered" alt="image-alt"> And also can use ggplot function. <img src="img/project/P1_process6.png" class="img-responsive img-centered" alt="image-alt"> <img src="img/project/P1_result4.png" class="img-responsive img-centered" alt="image-alt">
     
 ---
