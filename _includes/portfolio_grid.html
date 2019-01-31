@@ -1,8 +1,6 @@
 
     <!-- Portfolio Grid Section -->
 <script>
-alert("aaa");
-alert(site.posts);
 </script>>
     <section id="portfolio">
         <div class="container">
@@ -14,6 +12,7 @@ alert(site.posts);
             </div>
             <div class="row">
                 {% for post in site.posts %}
+                <div>{{post}}</div>
                     <div class="col-sm-4 portfolio-item">
                         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
