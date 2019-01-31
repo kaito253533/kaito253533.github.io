@@ -5,7 +5,7 @@ date: 2018-01-29
 img: project/P1_result4.png
 alt: image-alt
 project-date: January 2018
-url: https://github.com/kaito253533/R_DataAnalysis/blob/master/P1.Rmd
+address: https://github.com/kaito253533/R_DataAnalysis/blob/master/P1.Rmd
 category: Data Analysis
 description:
     This is the practice of R language from QUT tutorial materials. I made this to record my learning process. <br/>The data set represents the rent prices of different types of houses in the Brisbane area. As We can see, the data set contains the house types(column-dwelling_type), weely rent price(column-weekly_rent), and location(column-locality).<img src="img/project/P1_data.png" class="img-responsive img-centered" alt="image-alt"> 
