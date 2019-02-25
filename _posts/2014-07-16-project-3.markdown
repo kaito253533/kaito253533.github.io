@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2018-05-20
-img: portfolio/A1_process4.png
+img: project/A1_process4.png
 alt: image-alt
 project-date: May 2014
 client: Start Bootstrap
