@@ -1,8 +1,8 @@
 ---
 layout: default
-modal-id: 4
-date: 2018-03-10
-img: project/A1_process4.png
+modal-id: 3
+date: 2018-03-15
+img: portfolio/cake.png
 alt: image-alt
 project-date: March 2018
 address: https://github.com/kaito253533/R_DataAnalysis/blob/master/P2.Rmd
