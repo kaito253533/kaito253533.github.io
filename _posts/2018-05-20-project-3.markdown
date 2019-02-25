@@ -4,7 +4,7 @@ modal-id: 3
 date: 2018-05-20
 img: project/A1_process4.png
 alt: image-alt
-project-date: May 2014
+project-date: May 2018
 address: https://github.com/kaito253533/R_DataAnalysis/blob/master/Assignment1.Rmd
 category: Data Analysis
 description: 
