@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 3
+date: 2018-05-20
+img: project/A1_process4.png
+alt: image-alt
+project-date: May 2018
+address: https://github.com/kaito253533/R_DataAnalysis/blob/master/Assignment1.Rmd
+category: Data Analysis
+description: 
+    This is the one of the assignments for analysing data by R language from QUT.<br/>The data set this time are over 4.5 million Uber pickups in New York city from April to September 2014. The data contains Date/Time, latitude, longitude, and a code.<img src="img/project/A1_data.png" class="img-responsive img-centered" alt="image-alt"><br/>Firstly, we do the manipulation. In this case, we have 4 seperated csv file, so we use 'rbind' function to combine them together after we read them from csv files. Then, due to the requirements, we need to get the day of week from 'Date.Time' column, then try to find out which day has the most frequent pickups. As a result, first step is to convert 'Date.Time' column from 'text' format into 'data' format by 'mdy_hms' function. After we got correct format, we can get the day of week by 'wday' function. Finally, we can use 'table' funtion to sum up the freqencies.<img src="img/project/A1_process1.png" class="img-responsive img-centered" alt="image-alt"><img src="img/project/A1_process2.png" class="img-responsive img-centered" alt="image-alt"><br/>After these, we can use 'ggplot' to show the bar chart.<img src="img/project/A1_process3.png" class="img-responsive img-centered" alt="image-alt"><img src="img/project/A1_process4.png" class="img-responsive img-centered" alt="image-alt"> 
+
+---
