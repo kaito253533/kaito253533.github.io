@@ -1,12 +1,28 @@
 ---
 layout: default
 modal-id: 6
-date: 2014-07-15
-img: portfolio/submarine.png
+date: 2019-11-01
+img: portfolio/Project2.png
 alt: image-alt
-project-date: April 2014
+project-date: November 2019
 client: Start Bootstrap
 category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-
+description: 
+    This is the the second project I have done.<br/> The title is 'Solutions to Mitigate Urban Heat by Designing Transportation based on Data Analysing in Taiwan'.<br/> The main target is to find the relationship between the urban heat island effect and the amount of motorcycles in Taipei city.<br/> 
+    <h3>The urban heat island effect in Taipei city</h3><img src="img/project/Project2_1.png" class="img-responsive img-centered" alt="image-alt">
+    <p>I used the temperature data from different areas in Taipei, and the orange line represents the middle of city, and the blue line represents the rural area. As a result, the UHI effect is obvious in the Taipei city.</p>
+    <h3>The mean temperature in Taipei city</h3>
+    <img src="img/project/Project2_2.png" class="img-responsive img-centered" alt="image-alt">
+    <p>The mean temperature data shows that the temperature actually is getting higher and higher in each year.</p>
+    <h3>Air Pollution that discharged from motorcycles in Taipei city</h3>
+    <p>So, from this point, I did some researches to focus on the emission from motorcycles and try to see the amount in each year.</p>
+    <img src="img/project/Project2_3.png" class="img-responsive img-centered" alt="image-alt">
+    <img src="img/project/Project2_4.png" class="img-responsive img-centered" alt="image-alt">
+    <img src="img/project/Project2_5.png" class="img-responsive img-centered" alt="image-alt">
+    <img src="img/project/Project2_6.png" class="img-responsive img-centered" alt="image-alt">
+    <h3>The amount of motorcylces int Taipei city</h3>
+    <img src="img/project/Project2_7.png" class="img-responsive img-centered" alt="image-alt">
+    <h3>Conclusion</h3>
+    <P>As a final thought, the urban heat island effect and the temperature in the city might be impacted by multiple influences. It is difficult to tell that a single increasing or decreasing thing could solve the whole issue. Moreover, the changing temperature might take time to show the obvious trend, although there is plenty of data to analyze. Even though the result of this project cannot tell the 100% strong evidence that the number of motorcycles has positive impacts of the urban heat island effect in Taiwan, it is still helpful for air quality, and air quality might have positive impacts of the urban heat island effect in Taiwan. </P>
+    
 ---
