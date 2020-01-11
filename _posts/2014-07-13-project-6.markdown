@@ -5,8 +5,8 @@ date: 2019-11-01
 img: portfolio/Project2.png
 alt: image-alt
 project-date: November 2019
-client: Start Bootstrap
-category: Web Development
+address: https://github.com/kaito253533/Python_DataMining/tree/master/Project2
+category: Data Analysis
 description: 
     This is the the second project I have done.<br/> The title is 'Solutions to Mitigate Urban Heat by Designing Transportation based on Data Analysing in Taiwan'.<br/> The main target is to find the relationship between the urban heat island effect and the amount of motorcycles in Taipei city.<br/> 
     <h3>The urban heat island effect in Taipei city</h3><img src="img/project/Project2_1.png" class="img-responsive img-centered" alt="image-alt">

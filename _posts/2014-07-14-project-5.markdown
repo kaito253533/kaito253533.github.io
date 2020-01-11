@@ -1,12 +1,24 @@
 ---
 layout: default
 modal-id: 5
-date: 2014-07-14
-img: portfolio/safe.png
+date: 2019-06-01
+img: portfolio/Project1.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-
+project-date: June 2019
+address: https://github.com/kaito253533/Python_DataMining/tree/master/Project2
+category: Data Analysis
+description: 
+ This is the the first project I have done.<br/> The title is 'Big Data Analytics Based on The Implementation of Apache Spark'.<br/> 
+ <P>After I built a platform by Apache Spark, I tried to analyse data on it. The data is about the car accidents in the UK.</P>
+ <h3>Descriptive Analyzing</h3>
+ <P>Firstly, I just simply showed the amount in different conditions, such as weather, road type, and light condition</P>
+ <img src="img/project/Project1_1.png" class="img-responsive img-centered" alt="image-alt">
+ <img src="img/project/Project1_2.png" class="img-responsive img-centered" alt="image-alt">
+ <img src="img/project/Project1_3.png" class="img-responsive img-centered" alt="image-alt">
+ <img src="img/project/Project1_4.png" class="img-responsive img-centered" alt="image-alt">
+ <img src="img/project/Project1_5.png" class="img-responsive img-centered" alt="image-alt">
+ <h3>Clustering</h3>
+ <img src="img/project/Project1_7.png" class="img-responsive img-centered" alt="image-alt">
+ <P>To sum up, in the Raining day, people usually drive more carefully, however, there are still some accidents happened because roads are wet. In this cluster, the accidents are usually slight accidents with fewer vehicles and fewer casualties. Moreover, in cluster 1, in the snowing day, people drive carefully too, but the accidents still happened, and also the number of vehicles and casualties is lower than the next cluster. Finally, cluster 2 has fine weather, dried roads. However, the number of vehicles and the number of casualties are the highest due to people usually drive faster under these conditions.</P>
+ 
 ---
