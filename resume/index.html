@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -15,14 +15,23 @@ html,body{margin:0}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.85;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:760px;margin:0 auto;padding:0 28px 64px}
-.mast{display:flex;justify-content:space-between;align-items:baseline;padding-block:28px 14px;border-bottom:1px solid var(--ink);font-size:.78rem;color:var(--sub);letter-spacing:.16em}
+.mast{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:28px 14px;border-bottom:1px solid var(--ink);font-size:.78rem;color:var(--sub);letter-spacing:.16em}
 .mast .l{font-family:var(--serif-en);font-size:1.15rem;letter-spacing:.04em;color:var(--ink)}
 .mast a:hover{color:var(--ai)}
+.mast .r{display:flex;align-items:baseline;gap:20px}
+.lang{display:flex;gap:2px}
+.lang button{font:inherit;letter-spacing:.1em;color:var(--sub);background:none;border:0;border-bottom:1px solid transparent;padding:2px 6px;cursor:pointer}
+.lang button[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.lang button:hover{color:var(--ai)}
+.lang button:focus-visible,a:focus-visible{outline:1px solid var(--ai);outline-offset:4px}
 h1{font-family:var(--serif-en);font-weight:400;font-size:clamp(2.6rem,8vw,4rem);line-height:1;margin:56px 0 0}
 h1 em{font-style:italic;color:var(--sub)}
+[data-lang="zh"] h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.2rem,7vw,3.2rem);line-height:1.15}
+[data-lang="zh"] h1 em{font-family:var(--serif-en);font-weight:400;font-size:.55em;margin-left:.4em}
 .role{margin:14px 0 0;font-family:var(--serif-en);font-size:1.25rem;letter-spacing:.05em}
 .lede{margin:24px 0 0;max-width:62ch}
 h2{font-family:var(--serif-en);font-weight:400;font-size:1.3rem;letter-spacing:.04em;margin:48px 0 0;padding-top:16px;border-top:1px solid var(--ink)}
+[data-lang="zh"] h2{font-family:var(--serif);font-weight:600;font-size:1.15rem;letter-spacing:.2em}
 ul{margin:14px 0 0;padding-left:1.1em}
 li{margin-bottom:10px}
 li strong{font-weight:500}
@@ -33,43 +42,107 @@ li strong{font-weight:500}
 .links{margin-top:48px;display:flex;gap:24px;flex-wrap:wrap;font-size:.85rem;letter-spacing:.12em}
 .links a{border-bottom:1px solid var(--ink);padding-bottom:3px}
 .links a:hover{color:var(--ai);border-color:var(--ai)}
-a:focus-visible{outline:1px solid var(--ai);outline-offset:4px}
-@media print{body{background:#fff}.links,.mast a{display:none}}
+html[data-lang="en"] [data-l="zh"],html[data-lang="zh"] [data-l="en"]{display:none}
+@media print{body{background:#fff}.links,.mast a,.lang{display:none}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="mast"><span class="l">Lexi LU</span><a href="../">&larr; HOME</a></header>
+  <header class="mast">
+    <span class="l">Lexi LU</span>
+    <span class="r">
+      <span class="lang" role="group" aria-label="Language / 語言">
+        <button type="button" data-set="en" aria-pressed="true">EN</button>
+        <button type="button" data-set="zh" aria-pressed="false">中文</button>
+      </span>
+      <a href="../">&larr; HOME</a>
+    </span>
+  </header>
 
-  <h1>Lexi (Wan-Lun) <em>LU</em></h1>
-  <p class="role">Engineering Manager &middot; GenAI &amp; Data Platform</p>
-  <p class="lede">9+ years in software and data engineering. I lead a small AI engineering team at ASUS, building agentic workflow platforms and the data platform behind them, and bridging the gap between GenAI prototypes and production.</p>
+  <!-- English -->
+  <div data-l="en">
+    <h1>Lexi (Wan-Lun) <em>LU</em></h1>
+    <p class="role">Engineering Manager &middot; GenAI &amp; Data Platform</p>
+    <p class="lede">9+ years in software and data engineering. I lead a small AI engineering team at ASUS, building agentic workflow platforms and the data platform behind them, and bridging the gap between GenAI prototypes and production.</p>
 
-  <h2>Highlights</h2>
-  <ul>
-    <li><strong>Agentic SDLC platform.</strong> LangGraph and Claude SDK multi-agent workflow with parallel execution, human-in-the-loop approval gates, and self-healing retries; estimated 50%+ less engineer time per task.</li>
-    <li><strong>Legacy data pipeline refactor.</strong> A multi-day batch run now finishes in hours, and maintenance staffing dropped from four engineers to about one and a half.</li>
-    <li><strong>UDPP, a configuration-driven data platform.</strong> New pipeline work that used to take four engineers is now covered by one.</li>
-    <li><strong>AI persona simulation (prototype).</strong> Conceived and led a LangGraph-based system where simulated customer personas converse with a sales-recommendation agent to test product competitiveness early.</li>
-    <li><strong>AI Ops path for citizen developers.</strong> Managed deployment, security scanning, and monitoring so non-engineering teams can ship AI-assisted apps safely.</li>
-  </ul>
+    <h2>Highlights</h2>
+    <ul>
+      <li><strong>Agentic SDLC platform.</strong> LangGraph and Claude SDK multi-agent workflow with parallel execution, human-in-the-loop approval gates, and self-healing retries; estimated 50%+ less engineer time per task.</li>
+      <li><strong>Legacy data pipeline refactor.</strong> A multi-day batch run now finishes in hours, and maintenance staffing dropped from four engineers to about one and a half.</li>
+      <li><strong>UDPP, a configuration-driven data platform.</strong> New pipeline work that used to take four engineers is now covered by one.</li>
+      <li><strong>AI persona simulation (prototype).</strong> Conceived and led a LangGraph-based system where simulated customer personas converse with a sales-recommendation agent to test product competitiveness early.</li>
+      <li><strong>AI Ops path for citizen developers.</strong> Managed deployment, security scanning, and monitoring so non-engineering teams can ship AI-assisted apps safely.</li>
+    </ul>
 
-  <h2>Experience</h2>
-  <div class="row"><b>ASUSTeK Computer Inc. &mdash; Engineering Manager, GenAI &amp; Data Platform</b><span>2023 &ndash; Present</span></div>
-  <p class="meta">Lead four AI engineers and an intern; own requirements, resourcing, architecture, cross-department communication, and performance.</p>
-  <div class="row"><b>ASUSTeK Computer Inc. &mdash; Data Engineer</b><span>2020 &ndash; 2023</span></div>
-  <p class="meta">Hadoop/Spark and Airflow ETL pipelines, sales reporting for executives, and modernizing legacy .NET systems into Python/SQL pipelines.</p>
-  <div class="row"><b>GIS Research Center, Feng Chia University &mdash; Engineer</b><span>2014 &ndash; 2017</span></div>
-  <p class="meta">Full-stack web apps and APIs (C#/.NET); database tuning for government data centers.</p>
+    <h2>Experience</h2>
+    <div class="row"><b>ASUSTeK Computer Inc. &mdash; Engineering Manager, GenAI &amp; Data Platform</b><span>2023 &ndash; Present</span></div>
+    <p class="meta">Lead four AI engineers and an intern; own requirements, resourcing, architecture, cross-department communication, and performance.</p>
+    <div class="row"><b>ASUSTeK Computer Inc. &mdash; Data Engineer</b><span>2020 &ndash; 2023</span></div>
+    <p class="meta">Hadoop/Spark and Airflow ETL pipelines, sales reporting for executives, and modernizing legacy .NET systems into Python/SQL pipelines.</p>
+    <div class="row"><b>GIS Research Center, Feng Chia University &mdash; Engineer</b><span>2014 &ndash; 2017</span></div>
+    <p class="meta">Full-stack web apps and APIs (C#/.NET); database tuning for government data centers.</p>
 
-  <h2>Education</h2>
-  <div class="row"><b>Queensland University of Technology &mdash; M.IT (Data Science)</b><span>2018 &ndash; 2019</span></div>
-  <div class="row"><b>Feng Chia University &mdash; B.S., Information Engineering &amp; Computer Science</b><span>2010 &ndash; 2014</span></div>
+    <h2>Education</h2>
+    <div class="row"><b>Queensland University of Technology &mdash; M.IT (Data Science)</b><span>2018 &ndash; 2019</span></div>
+    <div class="row"><b>Feng Chia University &mdash; B.S., Information Engineering &amp; Computer Science</b><span>2010 &ndash; 2014</span></div>
+  </div>
+
+  <!-- 中文 -->
+  <div data-l="zh" lang="zh-Hant-TW">
+    <h1>呂宛倫<em>Lexi (Wan-Lun) LU</em></h1>
+    <p class="role">工程經理 &middot; GenAI 與資料平台</p>
+    <p class="lede">9 年以上軟體與資料工程經驗。我在華碩帶領小型 AI 工程團隊，建置 Agentic 工作流程平台與背後的資料平台，並把 GenAI 原型帶進正式環境。</p>
+
+    <h2>重點成果</h2>
+    <ul>
+      <li><strong>Agentic SDLC 平台。</strong>以 LangGraph 與 Claude SDK 打造多代理工作流程，具備平行執行、人機協作審核關卡與自我修復重試；估計每項任務的工程師工時縮短 50% 以上。</li>
+      <li><strong>舊資料管線重構。</strong>原本要跑數天的批次現在數小時內完成，維運人力由 4 位降至約 1.5 位。</li>
+      <li><strong>UDPP，設定檔驅動的資料平台。</strong>過去需要 4 位工程師的新管線開發，現在由 1 位即可負責。</li>
+      <li><strong>AI Persona 模擬（原型）。</strong>構想並主導以 LangGraph 打造的系統：讓模擬客戶 Persona 與銷售推薦代理對話，及早測試產品競爭力。</li>
+      <li><strong>非工程背景同仁的 AI Ops 路徑。</strong>提供託管部署、資安掃描與監控，讓非工程團隊能安全上線以 AI 輔助開發的應用。</li>
+    </ul>
+
+    <h2>工作經歷</h2>
+    <div class="row"><b>華碩電腦 &mdash; 工程經理，GenAI 與資料平台</b><span>2023 &ndash; 迄今</span></div>
+    <p class="meta">帶領 4 位 AI 工程師與 1 位實習生；負責需求、資源分配、架構、跨部門溝通與績效。</p>
+    <div class="row"><b>華碩電腦 &mdash; 資料工程師</b><span>2020 &ndash; 2023</span></div>
+    <p class="meta">Hadoop/Spark 與 Airflow ETL 管線、高階主管銷售報表，並將舊有 .NET 系統現代化為 Python/SQL 管線。</p>
+    <div class="row"><b>逢甲大學 GIS 研究中心 &mdash; 工程師</b><span>2014 &ndash; 2017</span></div>
+    <p class="meta">全端網頁應用與 API（C#/.NET）；政府資料中心的資料庫調校。</p>
+
+    <h2>學歷</h2>
+    <div class="row"><b>昆士蘭科技大學 &mdash; 資訊科技碩士（資料科學）</b><span>2018 &ndash; 2019</span></div>
+    <div class="row"><b>逢甲大學 &mdash; 資訊工程學系 學士</b><span>2010 &ndash; 2014</span></div>
+  </div>
 
   <nav class="links" aria-label="Links">
     <a href="https://www.linkedin.com/in/lexi-lu/" target="_blank" rel="noopener">LINKEDIN</a>
     <a href="https://github.com/kaito253533" target="_blank" rel="noopener">GITHUB</a>
   </nav>
 </div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var titles = { en: 'Resume · Lexi LU', zh: '履歷 · 呂宛倫 Lexi LU' };
+  function pick() {
+    var q = '';
+    try { q = (new URLSearchParams(location.search).get('lang') || '').toLowerCase(); } catch (e) {}
+    if (q === 'zh' || q === 'en') return q;
+    try { var s = localStorage.getItem('resume-lang'); if (s === 'zh' || s === 'en') return s; } catch (e) {}
+    return /^zh/i.test(navigator.language || '') ? 'zh' : 'en';
+  }
+  function apply(l, save) {
+    root.setAttribute('data-lang', l);
+    root.setAttribute('lang', l === 'zh' ? 'zh-Hant-TW' : 'en');
+    document.title = titles[l];
+    var btns = document.querySelectorAll('.lang button');
+    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-set') === l ? 'true' : 'false');
+    if (save) { try { localStorage.setItem('resume-lang', l); } catch (e) {} }
+  }
+  var btns = document.querySelectorAll('.lang button');
+  for (var i = 0; i < btns.length; i++) btns[i].addEventListener('click', function () { apply(this.getAttribute('data-set'), true); });
+  apply(pick(), false);
+})();
+</script>
 </body>
 </html>
