@@ -75,7 +75,9 @@ dd{margin:0;font-variant-numeric:tabular-nums}
 .read:focus-visible{outline:1px solid var(--ai);outline-offset:6px}
 
 /* link */
-.links{border-top:1px solid var(--ink);padding-block:0 80px}
+.links-sec{padding-bottom:56px}
+.links-sec .sec{border-top:1px solid var(--ink)}
+.links{padding-block:16px 0}
 .lk{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:24px;padding-block:28px;border-bottom:1px solid var(--rule)}
 .lk-t{font-family:var(--serif);font-size:1.2rem;letter-spacing:.12em}
 .lk-u{font-family:var(--serif-en);font-style:italic;font-size:1.05rem;color:var(--sub);letter-spacing:.02em;overflow-wrap:anywhere}
@@ -125,18 +127,27 @@ dd{margin:0;font-variant-numeric:tabular-nums}
     <div class="tate" aria-hidden="true">資料<b>・</b>模型<b>・</b>平台</div>
   </section>
 
-  <nav class="links" aria-label="連結">
-    <a class="lk" href="https://kaito253533.github.io/german/">
-      <span class="lk-t">Deutsch lernen</span>
-      <span class="lk-u">kaito253533.github.io/german</span>
-      <span class="lk-a" aria-hidden="true"></span>
-    </a>
-    <a class="lk" href="https://github.com/kaito253533/agentic-sdlc-demo" target="_blank" rel="noopener">
-      <span class="lk-t">Agentic SDLC Demo</span>
-      <span class="lk-u">LangGraph multi-agent workflow · github.com/kaito253533/agentic-sdlc-demo</span>
-      <span class="lk-a" aria-hidden="true"></span>
-    </a>
-  </nav>
+  <section class="links-sec" aria-labelledby="work-h">
+    <div class="sec"><div class="sec-head"><span class="no">01</span><h2 id="work-h">Work</h2><span>工作作品</span></div></div>
+    <nav class="links" aria-label="工作作品">
+      <a class="lk" href="https://github.com/kaito253533/agentic-sdlc-demo" target="_blank" rel="noopener">
+        <span class="lk-t">Agentic SDLC Demo</span>
+        <span class="lk-u">LangGraph multi-agent workflow · human-in-the-loop · GitHub</span>
+        <span class="lk-a" aria-hidden="true"></span>
+      </a>
+    </nav>
+  </section>
+
+  <section class="links-sec" aria-labelledby="learn-h">
+    <div class="sec"><div class="sec-head"><span class="no">02</span><h2 id="learn-h">Learning</h2><span>個人學習</span></div></div>
+    <nav class="links" aria-label="個人學習">
+      <a class="lk" href="https://kaito253533.github.io/german/">
+        <span class="lk-t">Deutsch lernen</span>
+        <span class="lk-u">kaito253533.github.io/german</span>
+        <span class="lk-a" aria-hidden="true"></span>
+      </a>
+    </nav>
+  </section>
 
   <footer class="colo">
     <span class="en">© 2026 Lexi LU</span>
